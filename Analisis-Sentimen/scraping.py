@@ -3,11 +3,11 @@ from google_play_scraper import reviews, Sort
 
 # Mengakses ulasan dan informasi aplikasi dari Google Play Store.
 scrapreview, continuation_token = reviews(
-    'com.telkomsel.telkomselcm',    # ID aplikasi
+    'com.shopee.id',    # ID aplikasi
     lang='id',                 # Bahasa ulasan (default: 'en')
     country='id',              # Negara (default: 'us')
     sort=Sort.MOST_RELEVANT,   # Urutan ulasan (default: Sort.MOST_RELEVANT)
-    count=3000,               # Jumlah maksimum ulasan yang ingin diambil
+    count=12000,               # Jumlah maksimum ulasan yang ingin diambil
 )
 
 # Menyimpan data ke dalam file CSV
